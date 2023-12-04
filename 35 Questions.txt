@@ -1,0 +1,479 @@
+You are now taking the Tableau Certified Data Analyst Exam, please answer the following questions to the best of your abilities from the option provided at the end of each question.
+
+
+Question 1
+[2.6.1. Sets]
+
+To show top 10 products by Sales and bottom 10 in the same view you need to:
+a. Duplicate Top 10 by Sales set and change its settings to Bottom 10 and rename it.
+b. Combine Top 10 by Sales set and Top Bottom by Sales set with shared members in both sets.
+c. Place combined set on filters shelf.
+d. Click on Product Name dimension and create a Top 10 by Sales set.
+e. Combine Top 10 by Sales set and Top Bottom by Sales set with all members in both sets.
+f. Use a combined set to build a wildcard filter.
+
+a. a, b, d, e
+b. b, a, c, e
+c. b, a, c, f
+d. a, c, d, e
+
+
+
+Question 2
+[2.1.2. Write string functions]
+You have a dataset where there is only one field for address. In some cases in includes also an email address, and you need to identify the cases. Fill in the missing parts of the calculation.
+
+Full Name | Address
+--------------------
+Ann Doherty | 58 Bay Rd. Camel Springs, IL 60122,ann.d235@gmail.com
+Alice Laskowski | 2180 Susan Street East Bloomfield, MI 48583
+Peter Applebaum | 1986 Birmingham Street Wimbledon, FL 33140
+Kent Newman | 946 Piper Street Epsom, MD 21921, kentnewman@swr-ltd.com
+
+_____A______ (______B_____, “@”)
+A. Choose from: STARTSWITH / FIND / CONTAINS / REPLACE
+B. Choose from: [Full Name] / [Address]
+
+a. CONTAINS / [Address]
+b. REPLACE/ [Full Name]
+c. FIND/ [Full Name]
+d. STARTSWITH / [Address]
+
+
+Question 3
+[1.2.1. Assess data quality (completeness, consistency, accuracy) / 1.2.5. Prepare data by using Data
+Interpreter, pivot, and split]
+
+To use a single measure to compare values over time:
+
+POSITION 05/2019 06/2019 07/2019 08/2019 09/2019
+1.1 SEO 7 283 321 7 228 349 7 560 543 7 399 761 7 579 656
+1.2 PPC 340 740 164 724 329 393 343 808 350 749
+1.3 Other 4 501 950 4 423 059 5 405 288 5 114 734 5 385 295
+1.4 Intercompany 264 489 250 967 277 906 565 973 419 913
+
+a. Merge columns from 05/2019 to 09/2019 and change the data type to Date.
+b. Pivot columns from 05/2019 to 09/2019, rename Pivot Field Name to Date and change its data type to Date.
+c. Use a wildcard pivot in Tableau Desktop to rearrange data.
+d. Use a custom split with “/“ as separator.
+
+Question 4
+[2.7.4. Create choropleth maps (filled maps)]
+
+To create a map of Sales in United States you need to drop:
+
+a. State pill on Color shelf, Sales on Columns and change Mark Type to Map
+b. State pill on Tooltip shelf, Sales on Color shelf and geographic field Country/ Region in the middle of working space
+c. State in the middle of working space and Sales on Color
+d. Latitude and Longitude on Detail, Sales on Color and State on Tooltip shelf.
+
+
+Question 5
+[2.2.4. Difference and percent of difference]
+
+Which calculation you would use to calculate an increase in Sales from one quarter to then next in the case shown in the view:
+
+a. ZN(SUM([Sales])) - LOOKUP(ZN(SUM([Sales])), -1)
+b. (ZN(SUM([Sales])) - LOOKUP(ZN(SUM([Sales])), -1)) / ABS(LOOKUP(ZN(SUM([Sales])), -1))
+c. ZN(SUM([Sales])) - LOOKUP( (SUM([Sales])), 0)
+d. (ZN(SUM([Sales])) - LOOKUP(ZN(SUM([Profit])), -1)) / ABS(LOOKUP(ZN(SUM([Profit])), -1))
+
+
+Question 6
+[1.1.9. Replace the connected data source with another data source for an existing chart or sheet]
+
+To replace a field with another in all calculations in a workbook you need to:
+a. Replace references by choosing the option form “Data” in upper text menu
+b. Remove the field on Data Source screen and replace it with another one
+c. Replace it manually in each calculation
+d. Replace references by clicking on the field in Data section of the screen and choosing the “Replace References…” option.
+
+Question 7
+[1.2.5. Prepare data by using Data Interpreter, pivot, and split]
+
+To perform a split without writing a calculation you need to:
+a. Go to Data Source screen, right click on fields name to find the option
+b. Drag and draw the “Split” from Analytics Pane
+c. Use a quick table calculation
+d. Go to Analysis section of upper text menu to find the option
+
+
+Question 8
+[2.6.1. Sets]
+
+To create a set containing top 10 States by profit you need in this case to:
+
+a. Right click selected top 10 States and choose option Create Set…
+b. Start from creating a parameter
+c. Click a paperclip on the upper toolbar
+d. Right click on State measure in the data pane to be able to create the set.
+
+
+Question 9
+[1.2.4.Use multiple data sources (establish relationships, create joins, union tables, blend data)]
+
+You have three tables. Two of them show clients in different regions, third one contains the information on frequent clients discounts. How would you prepare the data for analysis:
+
+ID Name Date Region Value
+DO-136452 Doug O'Kornie 13.06.2012 North 113,58
+DO-136452 Doug O'Kornie 14.12.2013 North 374,058
+ME-173202 Maria Eczewska 19.08.2012 North 143,88
+DL-133302 Denise Leinenbach 18.04.2014 North 459,918
+DL-133302 Denise Leinenbach 21.08.2013 North 78,354
+DL-133302 Denise Leinenbach 29.04.2013 North 620,055
+
+ID Name Date Value Area
+GG-146502 Greg Gorski 29.11.2015 1 973,30 South-West
+GG-146502 Greg Gorski 26.07.2013 169,74 South-West
+HG-150252 Gunter Schmidt 11.11.2015 349,44 South-West
+HG-150252 Gunter Schmidt 26.05.2013 167,58 South-West
+HG-150252 Gunter Schmidt 03.04.2016 97,32 South-West
+JW-160752 Julia East 11.11.2015 701,622 South-West
+
+ID Discount
+DO-136452 2,00%
+KD-162702 1,50%
+ME-173202 0,50%
+GG-146502 2%
+HG-150252 1,50%
+JW-160752 1,50%
+
+a. Join all the tables using ID as join field
+b. Use data blending to get the right level of aggregation and connect table 1 and 3, then union
+with table 2
+c. Union first two tables, merge unmatched fields and then join the third table with ID as join
+field
+d. Union all tables then merge mismatched fields.
+
+Question 10
+[1.1.9. Replace the connected data source with another data source for an existing chart or sheet]
+
+You want to replace a data source used in your report. To do that you:
+
+a. Add a new Data Source, from Data menu in upper text stripe choose Replace References option and close the current Data Source
+b. Add a new Data Source, from Data menu in upper text stripe choose a current Data Source and then Replace Data Source option
+c. Go to Data Source screen, remove a first data source and add another one
+d. In the Data Source screen choose Edit Connection option and then click Replace Data Source from the menu
+
+Question 11
+[1.1.9. Replace the connected data source with another data source for an existing chart or sheet]
+
+To replace nulls with zero you can:
+
+a. Use either ZN([Field]) or IFNULL([Field],0) calculations
+b. You cannot do that as nulls indicate that there is no data in a database
+c. Use ISNULL([Field]) or ZN([Field]) calculation
+
+
+Question 12
+[2.3.6. First-last]
+
+What will happen in the given table if you change Compute by option to “Table down”?
+
+a. Zeros will appear in each First Class row
+b. Zeros will appear in last column
+c. Zeros will appear for all cells in Central Region
+d. Zeros will appear for Central Region and First Class row
+
+Question 13
+[3.2. Create dashboards and stories / 3.2.2. Add objects]
+
+To create a Show/Hide Container with filters you:
+a. Place all filters in a floating container and hide the container
+b. Place all filters in a floating container and edit a Show/Hide Button
+c. Create a Show/Hide Button and then link it to the chosen container with all filters in it
+d. Create a new floating container, place all filters in it and edit a Navigate button
+
+Question 14
+[2.1.7. Write FIXED LOD calculations]
+
+Which LOD calculation syntax is correct if you plan to calculate entire profit of your store since it has been opened:
+
+a. {TOTAL(MAX([Date])): SUM(PROFIT)}
+b. {FIXED: SUM( [Profit])}
+c. {[Profit]}
+d. {EXCLUDE [Date]: SUM( [Profit])}
+
+Question 15
+[2.1.1. Write date calculations (DATEPARSE, DATENAME…)]
+
+Which calculation would you use to get a number of a month in a year
+
+a) DATEPART(‘month’, [Date])
+b) DATETRUNC(‘month’, [Date])
+c) DATENAME(‘month’, [Date])
+d) DATEPARSE( ‘month’, [Date])
+
+Question 16
+[3.4.1. Apply color, font, shapes, styling]
+
+What kind of color scale is in the view?
+
+a. Discrete
+b. Continuous
+c. Discrete based on 3-element category
+d. Continuous with 3 steps
+
+
+Question 17
+[2.4.3. Add filters to context]
+
+A measure in your view contains a LOD FIXED calculation. You need to create a dimension filter that would filter out all data to regional level. To do that you need to:
+
+a. Create a dimension filter with [Region], then click on it and choose Add to Context option
+b. Create a dimension filter with [Region] and apply it to all sheets using the data source
+c. Exclude [Order date] from the FIXED calculation
+d. Create the [Region] filter and apply it also to technical filtering view
+
+Question 18
+[2.1.6. Write aggregate functions]
+
+Which kind of calculation would be suitable to count the number of States in the view:
+
+a. COUNT([State])
+b. RANK([State])
+c. COUNTD([State])
+d. INDEX([State])
+
+Question 19
+[2.6.1. Sets]
+
+You are able to create a combined set when (choose the most appropriate answer):
+
+a. When sets there are to be combined are based on the same dimension
+b. When sets there are to be combined are based on the same measure
+c. When sets there are to be combined are share a common condition
+d. When sets there are to be combined exist in the same data source 
+
+Question 20
+[3.4. Format dashboards/ 3.4.1. Apply color, font, shapes, styling]
+
+Which option would you choose to set labels as shown in the picture:
+
+a. Min/Max and Table
+b. Min/Max and Pane
+c. Min/Max and Line/Pane
+d. Min/Max and Cell
+
+Question 21
+[1.2.5. Prepare data by using Data Interpreter, pivot, and split]
+
+You use a table from an Excel file. What will happen to the table after using Data Interpreter?
+
+a. The headers will disappear and the number of rows will increase
+b. The headers will be as in 2nd row and the number of rows will increase
+c. The headers will disappear and the number of rows will decline
+d. The headers will be as in 2nd row and the number of rows will decline
+
+
+Question 22
+[3.3.3. Swap sheets by using parameters or sheet selector]
+
+The steps that will allow you to swap sheets on dashboard are:
+
+a) Create a parameter
+b) Create a navigate button
+c) Create a sheet with buttons
+d) Create a filter on calculated field containing a parameter
+e) Set a parameter action
+
+a. a), b), c), d)
+b. a), b), c), d)
+c. b), c), d), e)
+d. a), c), d), e)
+
+Question 23
+[2.5. Create parameters to enable interactivity / 2.5.1. In calculations]
+
+The steps you should take to allow user to change a measure in the view are
+
+a) Create a parameter
+b) Create a set
+c) Create a filter on calculated field containing a parameter
+d) Create a calculated field containing parameter in the view
+e) Show parameter
+
+a. a), b), c)
+b. a), c), d)
+c. a), d), e)
+d. a), c), e)
+
+Question 24
+[3.1.1. Create basic charts from scratch (bar, line, pie, highlight table, scatter plot, histogram, tree
+map, bubbles, data tables, Gantt, box plots, area, dual axis, combo)]
+
+You want to create a pie chart. What you need to do is:
+
+a) Place a measure in Angle Shelf
+b) Place a dimension in Path Shelf
+c) Place a measure in Color Shelf
+d) Place a dimension in Color Shelf
+e) Change Mark Type to Pie chart
+
+a. a), d), e)
+b. a), b), c)
+c. b), d), e)
+d. c), d), e)
+
+Question 25
+[3.1.1. Create basic charts from scratch (bar, line, pie, highlight table, scatter plot, histogram, tree
+map, bubbles, data tables, Gantt, box plots, area, dual axis, combo)]
+
+The right Mark Type to use when creating a highlight table would be:
+
+a. Density
+b. Square
+c. Polygon
+d. Area
+
+Question 26
+[3.1.1. Create basic charts from scratch (bar, line, pie, highlight table, scatter plot, histogram, tree
+map, bubbles, data tables, Gantt, box plots, area, dual axis, combo)]
+
+To create a Gantt Chart with list and duration of tasks in your project you need to:
+
+a) Change Mark Type to Gantt Bar
+b) Place [Task Name] dimension in Rows Shelf
+c) Place [Start Date] in Size Shelf
+d) Place [Duration] measure in Size Shelf
+e) Place [Duration] measure Column Shelf
+f) Place [Start Date] in Column Shelf
+
+a. a), b), c), d)
+b. a), b), c), e)
+c. a), b), d), f)
+d. a), b), e), f)
+
+Question 27
+[2.8.5. Trend lines]
+
+To add a trend line to the view you can (choose right answers):
+
+a) Click on a axis and choose Add Trend Line option
+b) Go to Analytics Pane to drag and drop to the view a trend line
+c) Click on the view and choose from menu Trend Lines/Show Trend Lines
+d) From Upper text menu choose Trend Lines/Show Trend Lines
+
+a. All of above
+b. None of above
+c. a), b), c)
+d. a), c), d)
+
+Question 28
+[2.6.1. Sets]
+
+You want to use a set to dynamically filter top 5 customers by sales in each month. How can you create such a set?
+
+a. Choose Customers in the view, right click and choose Create Set option
+b. Choose Customers in the view and choose Create Set icon in the tooltip
+c. Click on [Customer Name] dimension in the Data Pane and choose Create Set
+d. None of the above
+
+Question 29
+[2.1.4. Write number functions]
+
+You want [Sales] measure in labels to be shown with one decimal place. What would be the best calculation to achieve the result?
+
+a. ROUND([Sales], 1)
+b. CEILING([Sales], 1)
+c. INT(([Sales], 1)
+d. FLOOR(([Sales], 1)
+
+Question 30
+[4.1.4. Export content]
+
+Which option you need to choose from toolbar to export a dashboard to a Power Point presentation?
+
+a. Worksheet/ Export/ Image
+b. Dashboard/ Export Image
+c. File/ Export as Packaged Workbook
+d. File/ Export As Version
+
+
+Question 31
+[1.2.4.Use multiple data sources (establish relationships, create joins, union tables, blend data)]
+
+You want to join Table A and B, and then relate them to Table C to avoid duplicating rows with tables that have different aggregation level. What should you do?
+
+Tab. A
+Customer ID Date Sales
+RP-198552 12.11.2011 551,61
+RP-198552 22.03.2011 256,8
+RP-198552 24.09.2012 16,74
+RP-198552 14.12.2011 522,06
+DJ-135102 21.01.2014 169,5
+DJ-135102 24.04.2011 54,6
+DJ-135102 25.12.2011 526,62
+CP-123402 27.11.2011 591,3
+FM-142152 08.02.2013 20,13
+FM-142152 06.02.2014 132,9
+IM-150552 27.11.2013 21,06
+
+Tab. B
+Segment Customer ID
+Small Business DJ-135102
+Corporate CP-123402
+Corporate FM-142152
+Small Business RP-198552
+Corporate IM-150552
+
+Tab. B
+Segment Sales Target
+Small Business 2500
+Corporate 3000
+Personal 2000
+
+a. Drag tab. A to canvas, double click to open a physical layer, join the table with tab. B, close physical layer and drag Tab. C to canvas build a relation
+b. Drag tab. A to canvas and click on it to open menu to establish any type of connection – union, join or relation
+c. Double click on canvas to open a logical layer. Drag there tab. A and tab. B. Close it to add relation with tab. C in physical layer.
+d. Drag tab. A to canvas, double click to open a physical layer, relate the table with tab. B, close physical layer and drag Tab. C to canvas build a join
+
+Question 32
+[3.1.1. Create basic charts from scratch (bar, line, pie, highlight table, scatter plot, histogram, tree
+map, bubbles, data tables, Gantt, box plots, area, dual axis, combo)]
+
+To create a dual axis chat one has to:
+
+a) Place two measures either in Rows Shelf or Columns Shelf
+b) Place [Measure Names] in Filter Shelf
+c) Click on second measure pill or second axis and choose Dual Axis option
+d) Place at least one of the measures in Path Shelf
+e) Sort measures in Measure Shelf
+
+a. a), b)
+b. a), c)
+c. d), e)
+d. all of the above
+
+
+Question 33
+[2.8.7. Forecast by using default settings]
+
+To add forecast to the view you can:
+
+a. Go to Upper text menu, choose Analysis/ Forecast/ Show Forecast
+b. Go to Analytics Pane, drag Forecast and drop it to the canvas
+c. Go to Analytics Pane and double click Forecast
+d. All of the above
+
+Question 34
+[2.8.1. Totals and subtotals]
+
+To show Totals as shown below you should:
+
+a. From Menu Analysis choose Row Totals to Left option
+b. From Menu Analysis choose Show Row Grand Totals and Row Totals to Left options
+c. From Menu Analysis choose Show Row Grand Totals
+d. From Menu Analysis choose Show All Subtotals
+
+Question 35
+[2.3.6. First-last]
+
+You need to use a table calculation in order to remove years with uncomplete data from the table.
+
+What calculation would you use and how would you set up the filter:
+
+a. Calculation first()=0, set up to table across and choose False when placing it on filter shelf
+b. Calculation last()=0, set up to table across and choose False when placing it on filter shelf
+c. Calculation first()=0, set up to table down and choose False when placing it on filter shelf
+d. Calculation last()=0, set up to table down and choose True when placing it on filter shelf
