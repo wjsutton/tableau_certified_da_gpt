@@ -18,7 +18,7 @@ This project aims to provide a custom OpenAI GPT model specifically tailored for
 ## Files in this Repository
 - [GPT Instructions v1](https://raw.githubusercontent.com/wjsutton/tableau_certified_da_gpt/main/Custom%20GPT%20v1.txt) - Version 1 of the prompt instructions, answered 71% of questions correctly (24/34).
 - [GPT Instructions v2](https://raw.githubusercontent.com/wjsutton/tableau_certified_da_gpt/main/Custom%20GPT%20v2.txt) - Version 2 of the prompt instructions, answered 85% of questions correctly (29/34).
-- [Data_analyst_study_guide.csv](https://github.com/wjsutton/tableau_certified_da_gpt/blob/main/Data_analyst_study_guide.csv) - A dataset containing the exam syllabus and links to relevant Tableau help pages.
+- [Data_analyst_study_guide.csv](https://github.com/wjsutton/tableau_certified_da_gpt/blob/main/Data_analyst_study_guide.csv) - A dataset containing the exam syllabus and links to relevant Tableau help pages from [learningtableau.com](https://learningtableau.com/wp-content/uploads/dlm_uploads/2022/02/Data-Analyst-Study-Guide.pdf).
 - [Data_analyst_study_guide_with_content.csv](https://github.com/wjsutton/tableau_certified_da_gpt/blob/main/Data_analyst_study_guide_with_content.csv) - The exam syllabus dataset enriched with text content from the relevant exam pages for GPT training, as of 2023-11-28.
 - [Practice Questions](https://raw.githubusercontent.com/wjsutton/tableau_certified_da_gpt/main/35%20Questions.txt) - A collection of 35 practice questions from [https://savvy-data-science.ck.page/1ec0f2d5a8](https://savvy-data-science.ck.page/1ec0f2d5a8).
 
